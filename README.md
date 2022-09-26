@@ -29,3 +29,5 @@ For the present work the following programs were used:
 
 
 <h4> More information in the pdf file.</h4>
+
+![](./DataAnalitycsCertificate.png)
