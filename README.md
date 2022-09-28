@@ -3,39 +3,39 @@
 <img height="500em" align="right" src="./Img/Portada.JPG"/>
 
 
-<h4> 1. Introduction</h4>
+<h3> 1. Introduction</h3>
 The TDF is an annual multi-stage cycle race that takes place primarily in France. Although occasionally it passes through nearby countries.
 It is one of the most watched sports competitions in the world. Broadcast in 180 countries and seen by 3.5 billion people each year.
 The Tour was created in 1903 and hardly stopped during the 2 World Wars.
 
-<h4> 2. Objective </h4>
+<h3> 2. Objective </h3>
 You want to explore the history of TDF from a data perspective.
 The idea is to make statements about the runners and about the race in general.
 
-<h4> 3. Scope </h4>
+<h3> 3. Scope </h3>
 To carry out the study, all the information found from 1930 to 2016 was taken into account.
 On October 22, 2012, Lance Armstrong is formally stripped of the seven Tour de France titles he won between 1999 and 2005. He was banned for life from cycling after being found to have used illegal drugs.
 For this work, data from those years were not taken into account.
 
-<h4> 4. End user and application level of the analysis. </h4>
+<h3> 4. End user and application level of the analysis. </h3>
 It is aimed at the general public, who may not know about the race, and at people who have a notion of it and want to know even more.
 
-<h4> 5. Technological tools implemented. </h4> 
+<h3> 5. Technological tools implemented. </h3> 
 For the present work the following programs were used:
 - Excel for reading and cleaning the datasets.
 - Draw.io for the creation of the entity-relationship diagram (https://app.diagrams.net).
 - Power BI Desktop for the creation of the dashboard.
 
-<h4> 6. Entity-relationship diagram of the selected tables.</h4> 
+<h3> 6. Entity-relationship diagram of the selected tables.</h3> 
 
 <p align="center">
 <img src="./Img/EntityTable.JPG">
 </p>
 
-<h4> 7. Selected segmentation.</h4>
+<h3> 7. Selected segmentation.</h3>
 A slicer was added to be able to filter the data by years. With it you can choose a particular year or a group of years.
 
-<h4> 8. Transformations made.</h4>
+<h3> 8. Transformations made.</h3>
 - Table_Calendar table was created.
 
 - Because there are results that were removed from the history, a global filter was created so that they are not taken into account.
@@ -120,8 +120,7 @@ Fx_Country
 let
     Country = (lat as text, long as text) =>
 let
-    Source = Xml.Tables(Web.Contents("http://dev.virtualearth.net/REST/v1/Locations/"&lat&","&long&"?
-o=xml&key=yrpxQ0r9fx0EIzqNjn4m~bOwNFoUgWB2FolmEWx5w9w~AidsLHcSsfkFp-DbTBR0fyyQC0NjIw_Cqwndw5FLgb48UBfXG5ZUbVP0Q7tOzg04")),
+    Source = Xml.Tables(Web.Contents("http://dev.virtualearth.net/REST/v1/Locations/"&lat&","&long&"?o=xml&key=yrpxQ0r9fx0EIzqNjn4m~bOwNFoUgWB2FolmEWx5w9w~AidsLHcSsfkFp-DbTBR0fyyQC0NjIw_Cqwndw5FLgb48UBfXG5ZUbVP0Q7tOzg04")),
     #"Tipo cambiado" = Table.TransformColumnTypes(Origen,{{"Copyright", type text}, {"BrandLogoUri", type text}, {"StatusCode", Int64.Type}, {"StatusDescription", type text}, {"AuthenticationResultCode", type text}, {"TraceId", type text}}),
     ResourceSets = #"Tipo cambiado"{0}[ResourceSets],
     ResourceSet = ResourceSets{0}[ResourceSet],
@@ -136,7 +135,7 @@ in
 in 
     Country
 
-<h4> 9. Data visualization.</h4>
+<h3> 9. Data visualization.</h3>
 Dashboard visualization was done in Power BI.
 Below is a brief summary of each of the pages created:
 
@@ -217,8 +216,7 @@ The following tooltips are added:
 
 Tooltips are displayed when hovering over charts.
 
-
-13. Future Updates.
+<h3> 10. Future Updates.</h3>
 
 It is considered opportune to update the BDD including information from 2017 to 2022 to continue with the analysis.
 
