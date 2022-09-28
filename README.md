@@ -1,6 +1,6 @@
-<h1>Data Analytics Tour de France</h2>
 
-<h3>Final Project of Data Analytics Course at Coderhouse</h3>
+<h1 align="center">Final Project of Data Analytics Course at Coderhouse</h3>
+<img height="500em" align="right" src="./Img/Portada.JPG"/>
 
 
 <h4> 1. Introduction</h4>
@@ -27,6 +27,10 @@ For the present work the following programs were used:
 - Power BI Desktop for the creation of the dashboard.
 
 <h4> 6. Entity-relationship diagram of the selected tables.</h4> 
+
+<p align="center">
+<img src="./Img/EntityTable.JPG">
+</p>
 
 <h4> 7. Selected segmentation.</h4>
 A slicer was added to be able to filter the data by years. With it you can choose a particular year or a group of years.
@@ -141,8 +145,86 @@ It gives a brief description of what the TDF is.
 Buttons are added to the other sheets of the presentation.
 The date of the last update of the Power BI file is added.
 
+<p align="center">
+<img src="./Img/page1.JPG">
+</p>
 
-<h4> More information in the pdf file.</h4>
+A marker is added to indicate why there is data that was not taken into account for the analysis.
+
+<p align="center">
+<img src="./Img/Page2.JPG">
+</p>
 
 
-![](./DataAnalitycsCertificate.png)
+- General Info page.
+That page tries to further explain what the TDF means. In addition to giving information about the competition.
+The necessary buttons are added to return to the Home or go to the other Sheets.
+
+<p align="center">
+<img src="./Img/page3.JPG">
+</p>
+
+- Career Page.
+A slicer is added so that the user can select the years they are interested in.
+This Sheet deals with the general data of the race, its competitors and the countries through which it was developed.
+Information on the above topics is added.
+
+<p align="center">
+<img src="./Img/page4.JPG">
+</p>
+
+- Participants page.
+It is the last page of the presentation.
+  It deals with everything related to brokers.
+
+<p align="center">
+<img src="./Img/page4.JPG">
+</p>
+
+
+The following tooltips are added:
+
+- AvgVel
+
+<p align="center">
+<img src="./Img/page5.JPG">
+</p>
+
+- Cities
+
+<p align="center">
+<img src="./Img/page6.JPG">
+</p>
+
+- NationalityWinners
+
+<p align="center">
+<img src="./Img/page7.JPG">
+</p>
+
+- TeamsYears
+
+<p align="center">
+<img src="./Img/page8.JPG">
+</p>
+
+- CitiesStart
+
+<p align="center">
+<img src="./Img/page9.JPG">
+</p>
+
+
+Tooltips are displayed when hovering over charts.
+
+
+13. Future Updates.
+
+It is considered opportune to update the BDD including information from 2017 to 2022 to continue with the analysis.
+
+In addition, more information could be obtained about the particular stages of each edition to deepen the analysis.
+
+
+<h4> More information in the <a href="./ProyectoFinal.pdf">pdf</a> file.</h4>
+
+
