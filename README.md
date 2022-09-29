@@ -36,6 +36,7 @@ For the present work the following programs were used:
 A slicer was added to be able to filter the data by years. With it you can choose a particular year or a group of years.
 
 <h3> 8. Transformations made.</h3>
+
 - Table_Calendar table was created.
 
 - Because there are results that were removed from the history, a global filter was created so that they are not taken into account.
